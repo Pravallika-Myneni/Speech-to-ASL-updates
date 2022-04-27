@@ -6,9 +6,9 @@ def play_video(filename):
     while(1):
         ret, frame = cap.read()
         cv2.imshow('frame',frame)
-        if(cv2.waitKey(1) & 0xFF == ord('q') or ret==False):
+        if(cv2.waitKey(5) & 0xFF == ord('q') or ret==False):
             cap.release()
             cv2.destroyAllWindows()
             break
         cv2.imshow('frame',frame)
-play_video("Thank.mp4")
+play_video("C:/Users/Pravallika Myneni/Desktop/Work/Personal-Projects/Speech_to_ASL/assets/God.mp4")
